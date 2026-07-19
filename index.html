@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Build Your Own Local AI Study Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+
+  <header class="hero">
+    <div class="badge">Free &middot; Offline &middot; 2026 student guide</div>
+    <h1>Build your own local AI study assistant</h1>
+    <p class="subtitle">Run a real AI chatbot on your own laptop — no internet, no subscription, no data leaving your machine.</p>
+  </header>
+
+  <div class="robot-panel">
+    <svg id="robot" width="120" height="120" viewBox="0 0 120 120">
+      <rect x="30" y="38" width="60" height="50" rx="14" fill="#e8c877" stroke="#8a6a2a" stroke-width="3"/>
+      <circle cx="48" cy="60" r="7" fill="#2b2b38" id="eyeL"/>
+      <circle cx="72" cy="60" r="7" fill="#2b2b38" id="eyeR"/>
+      <rect x="48" y="76" width="24" height="5" rx="2.5" fill="#2b2b38"/>
+      <line x1="60" y1="38" x2="60" y2="22" stroke="#8a6a2a" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="60" cy="18" r="6" fill="#ff9d4d" id="antenna"/>
+      <rect x="14" y="52" width="10" height="22" rx="5" fill="#e8c877" stroke="#8a6a2a" stroke-width="2"/>
+      <rect x="96" y="52" width="10" height="22" rx="5" fill="#e8c877" stroke="#8a6a2a" stroke-width="2"/>
+    </svg>
+    <div class="speech-bubble">
+      <p id="speechText">Hi! I'll walk you through the six steps to build your own offline AI study buddy. Tap a step below to begin.</p>
+    </div>
+  </div>
+
+  <section class="steps-section">
+    <h2>The 6-step build</h2>
+    <div class="progress-track">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+    <div class="steps-grid" id="stepsGrid">
+      <!-- step cards injected by script.js -->
+    </div>
+  </section>
+
+  <section class="tools-section">
+    <h2>What you'll need <span class="free-tag">all free</span></h2>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <div class="tool-icon">🦙</div>
+        <div class="tool-name">Ollama</div>
+        <div class="tool-desc">Runs AI language models directly on your laptop, fully offline.</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">💎</div>
+        <div class="tool-name">Gemma model</div>
+        <div class="tool-desc">A lightweight open model you download once through Ollama and run locally.</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">🖥️</div>
+        <div class="tool-name">VS Code</div>
+        <div class="tool-desc">Free code editor, set up with Python to build your chatbot interface.</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">📚</div>
+        <div class="tool-name">AnythingLLM</div>
+        <div class="tool-desc">Connects your lecture notes to the model so it can answer from your own material.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="specs-section">
+    <h2>Laptops that run this smoothly (2026)</h2>
+    <div class="laptop-table">
+
+      <div class="laptop-row">
+        <div class="laptop-name">Lenovo LOQ <span class="tag tag-fit">under ₹90k</span></div>
+        <div class="laptop-specs">Ryzen 7 7735HS &middot; 16GB DDR5 &middot; RTX 4050 6GB &middot; 144Hz IPS display</div>
+        <div class="laptop-price">~₹77,000&ndash;80,000</div>
+      </div>
+
+      <div class="laptop-row">
+        <div class="laptop-name">Asus TUF Gaming A15 <span class="tag tag-fit">under ₹90k</span></div>
+        <div class="laptop-specs">Ryzen 7 7435HS &middot; 16GB RAM &middot; 512GB SSD &middot; dedicated GPU</div>
+        <div class="laptop-price">₹55,990</div>
+      </div>
+
+      <div class="laptop-row">
+        <div class="laptop-name">Acer Nitro V <span class="tag tag-fit">~₹90k</span></div>
+        <div class="laptop-specs">Ryzen 7 8845HS &middot; 16GB DDR5 &middot; RTX 4060 8GB &middot; 165Hz IPS</div>
+        <div class="laptop-price">~₹85,000&ndash;90,000</div>
+      </div>
+
+      <div class="laptop-row laptop-row-stretch">
+        <div class="laptop-name">Lenovo Legion 5 (2025) <span class="tag tag-stretch">above ₹90k</span></div>
+        <div class="laptop-specs">Ryzen 7 260 &middot; 16GB RAM &middot; 1TB SSD &middot; RTX 5050 &middot; 165Hz WUXGA &middot; 80Wh battery, Rapid Charge</div>
+        <div class="laptop-price">₹1,37,490</div>
+      </div>
+
+    </div>
+    <p class="specs-footnote">The Legion 5 is a genuinely stronger machine — bigger battery, faster GPU, sharper display — but it sits above the ₹90k mark. Worth it if your budget can stretch; the LOQ or Nitro V get you 90% of the AI performance for a lot less.</p>
+  </section>
+
+  <footer class="footer">
+    <p>Built as a student resource — copy the idea, run it on your own notes, and share what you build.</p>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
